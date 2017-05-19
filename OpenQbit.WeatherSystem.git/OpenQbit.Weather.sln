@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 Common", "0 Common", "{00CD563A-C7D9-4CB7-8292-2C2C750F73DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 Presentation", "1 Presentation", "{FE60011E-D023-4354-9921-2340AC421514}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 Service", "2 Service", "{16935FC7-065B-464E-B633-7B2018C31562}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 BLL", "3 BLL", "{8A3C8176-A84D-47E4-9A56-9F8AA9D4B69B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 DAL", "4 DAL", "{72A8F71A-1DB9-43AE-A8CA-CAB8A508890D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 Test", "5 Test", "{DD3074E6-CF6B-473B-8962-843F4C1EBF28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Weather.Common.Models", "OpenQbit.Weather.Common.Models\OpenQbit.Weather.Common.Models.csproj", "{ECB8A5DD-5C4F-4300-A856-23D86FF664F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECB8A5DD-5C4F-4300-A856-23D86FF664F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECB8A5DD-5C4F-4300-A856-23D86FF664F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECB8A5DD-5C4F-4300-A856-23D86FF664F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECB8A5DD-5C4F-4300-A856-23D86FF664F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ECB8A5DD-5C4F-4300-A856-23D86FF664F8} = {00CD563A-C7D9-4CB7-8292-2C2C750F73DA}
+	EndGlobalSection
+EndGlobal
