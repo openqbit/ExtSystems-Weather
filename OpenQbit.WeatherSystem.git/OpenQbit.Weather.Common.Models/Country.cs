@@ -8,7 +8,8 @@ namespace OpenQbit.Weather.Common.Models
 {
     public class Country
     {
-        public int id { get; set; }
-        public String countryName { get; set; }
+        public int Id { get; set; }
+        public string countryName { get; set; }
+        
     }
 }
