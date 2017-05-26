@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 Test", "5 Test", "{DD3074
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Weather.Common.Models", "OpenQbit.Weather.Common.Models\OpenQbit.Weather.Common.Models.csproj", "{ECB8A5DD-5C4F-4300-A856-23D86FF664F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Weather.DAL.DataAccess", "OpenQbit.Weather.DAL.DataAccess\OpenQbit.Weather.DAL.DataAccess.csproj", "{C9830A5E-208C-444B-AF11-B950B26C8D76}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,11 +29,16 @@ Global
 		{ECB8A5DD-5C4F-4300-A856-23D86FF664F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECB8A5DD-5C4F-4300-A856-23D86FF664F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECB8A5DD-5C4F-4300-A856-23D86FF664F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9830A5E-208C-444B-AF11-B950B26C8D76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9830A5E-208C-444B-AF11-B950B26C8D76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9830A5E-208C-444B-AF11-B950B26C8D76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9830A5E-208C-444B-AF11-B950B26C8D76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{ECB8A5DD-5C4F-4300-A856-23D86FF664F8} = {00CD563A-C7D9-4CB7-8292-2C2C750F73DA}
+		{C9830A5E-208C-444B-AF11-B950B26C8D76} = {72A8F71A-1DB9-43AE-A8CA-CAB8A508890D}
 	EndGlobalSection
 EndGlobal
