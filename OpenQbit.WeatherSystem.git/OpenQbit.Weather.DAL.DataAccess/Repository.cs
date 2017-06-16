@@ -7,27 +7,22 @@ using System.Threading.Tasks;
 using System.Linq.Expressions;
 using System.Data.Entity;
 using OpenQbit.Weather.DAL.DataAccess.Contracts;
+using OpenQbit.Weather.Common.Utils.Logs;
+using Microsoft.Practices.Unity;
 
 namespace OpenQbit.Weather.DAL.DataAccess
 {
     public class Repository : IRepository
     {
+        private ILogger _logger;
+
+        [InjectionConstructor]
+        public Repository(ILogger _logger)
+        {
+            this._logger = _logger;
+        }
+
         private WeatherContext _db = new WeatherContext();
-        public List<T> GetAll<T>() where T : class
-        {
-            return _db.Set<T>().ToList();
-        }
-
-        public T Find<T>(Expression<Func<T, bool>> predicate) where T : class
-        {
-            return _db.Set<T>().FirstOrDefault<T>(predicate);
-        }
-
-        public List<T> FindList<T>(Expression<Func<T, bool>> predicate) where T : class
-        {
-            return _db.Set<T>().Where<T>(predicate).ToList();
-        }
-
         public bool Create<T>(T obj) where T : class
         {
 
@@ -41,6 +36,19 @@ namespace OpenQbit.Weather.DAL.DataAccess
                 return false;
             }
 
+        }
+
+        public bool Delete<T>(T obj) where T : class
+        {
+            try
+            {
+                _db.Set<T>().Remove(obj);
+                return true;
+            }
+            catch (Exception edb)
+            {
+                return false;
+            }
         }
 
         public bool Update<T>(T obj) where T : class
@@ -57,19 +65,22 @@ namespace OpenQbit.Weather.DAL.DataAccess
                 return false;
             }
         }
-
-        public bool Delete<T>(T obj) where T : class
+                
+        public T Find<T>(Expression<Func<T, bool>> predicate) where T : class
         {
-            try
-            {
-                _db.Set<T>().Remove(obj);
-                return true;
-            }
-            catch (Exception edb)
-            {
-                return false;
-            }
+            return _db.Set<T>().FirstOrDefault<T>(predicate);
         }
+
+        public List<T> FindList<T>(Expression<Func<T, bool>> predicate) where T : class
+        {
+            return _db.Set<T>().Where<T>(predicate).ToList();
+        }
+
+        public List<T> GetAll<T>() where T : class
+        {
+            return _db.Set<T>().ToList();
+        }
+             
 
         public bool Save()
         {
