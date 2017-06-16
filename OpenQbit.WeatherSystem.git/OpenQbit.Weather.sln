@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Weather.WeatherSer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Weather.Common.loc", "OpenQbit.Weather.Common.loc\OpenQbit.Weather.Common.loc.csproj", "{F0C341DB-8D82-4888-AC41-FA2D4C1FA57E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{5ECD3131-12D0-4BF0-9EC8-2E9BD55BC147}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Weather.Common.Utils.Logs", "OpenQbit.Weather.Common.Utils.Logs\OpenQbit.Weather.Common.Utils.Logs.csproj", "{68A43574-741B-457E-ADC4-A0831518F35F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,10 @@ Global
 		{F0C341DB-8D82-4888-AC41-FA2D4C1FA57E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0C341DB-8D82-4888-AC41-FA2D4C1FA57E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0C341DB-8D82-4888-AC41-FA2D4C1FA57E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68A43574-741B-457E-ADC4-A0831518F35F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68A43574-741B-457E-ADC4-A0831518F35F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68A43574-741B-457E-ADC4-A0831518F35F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68A43574-741B-457E-ADC4-A0831518F35F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,5 +83,7 @@ Global
 		{FD19EFE2-2513-4808-B872-C65F850B63DD} = {8A3C8176-A84D-47E4-9A56-9F8AA9D4B69B}
 		{C57BFA9C-12AF-4A41-83D8-65EBF1CBCB36} = {8A3C8176-A84D-47E4-9A56-9F8AA9D4B69B}
 		{F0C341DB-8D82-4888-AC41-FA2D4C1FA57E} = {00CD563A-C7D9-4CB7-8292-2C2C750F73DA}
+		{5ECD3131-12D0-4BF0-9EC8-2E9BD55BC147} = {00CD563A-C7D9-4CB7-8292-2C2C750F73DA}
+		{68A43574-741B-457E-ADC4-A0831518F35F} = {5ECD3131-12D0-4BF0-9EC8-2E9BD55BC147}
 	EndGlobalSection
 EndGlobal
