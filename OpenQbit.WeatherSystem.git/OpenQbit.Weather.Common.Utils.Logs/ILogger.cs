@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace OpenQbit.Weather.Common.Utils.Logs
 {
-    public class Class1
+    public interface ILogger
     {
+        bool LogError(string err);
     }
 }
