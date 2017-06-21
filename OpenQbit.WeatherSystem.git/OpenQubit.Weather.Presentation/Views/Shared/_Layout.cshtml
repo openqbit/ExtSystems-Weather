@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <!--"~/images/back/back.jpg" -->
+    @*<div data-scroll-speed="6" class="back-img">*@
+    @*<div data-scroll-speed="9" class="back-img1">*@
+    <div class="body-upper">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        <li>@Html.ActionLink("Weather", "Index", "Home")</li>
+                    </ul>
+                    @Html.Partial("_LoginPartial")
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            @RenderBody()
+
+        </div>
+    </div>
+
+    <div id="back" id="foot">
+        <br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <h4 class="sub-top">Location</h4>
+                    <br>
+                    <p>The hugafg eiou gf</p>
+                    <p>The ysfui of fibdi</p>
+                    <p>The orenge uaygfka</p>
+                    <p>The ywru eiou gf</p>
+                </div>
+                <div class="col-lg-3">
+                    <h4 class="sub-top">Location</h4>
+                    <br>
+                    <p>The hugafg eiou gf</p>
+                    <p>The ysfui of fibdi</p>
+                    <p>The orenge uaygfka</p>
+                    <p>The ywru eiou gf</p>
+                </div>
+                <div class="col-lg-3">
+                    <h4 class="sub-top">Location</h4>
+                    <br>
+                    <p>The hugafg eiou gf</p>
+                    <p>The ysfui of fibdi</p>
+                    <p>The orenge uaygfka</p>
+                    <p>The ywru eiou gf</p>
+                </div>
+                <div class="col-lg-3">
+                    <h4 class="sub-top">Location</h4>
+                    <br>
+                    <p>The hugafg eiou gf</p>
+                    <p>The ysfui of fibdi</p>
+                    <p>The orenge uaygfka</p>
+                    <p>The ywru eiou gf</p>
+                </div>
+
+
+            </div>
+            <br>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </div>
+    </div>
+
+
+
+
+
+
+    @*</div>*@
+    @*</div>*@
+
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
