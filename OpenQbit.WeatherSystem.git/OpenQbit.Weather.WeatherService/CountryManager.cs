@@ -28,32 +28,32 @@ namespace OpenQbit.Weather.WeatherService
 
         public bool Update<T>(T obj) where T : class
         {
-            //return _repository.Update(obj);
+            
         }
 
         public bool Delete<T>(T obj) where T : class
         {
-            //return _repository.Delete(obj);
+            
         }
 
         public List<T> GetAll<T>() where T : class
         {
-            //return _repository.GetAll<T>();
+            
         }
 
         public T Find<T>(Expression<Func<T, bool>> predicate) where T : class
         {
-            //return _repository.Find(predicate);
+            
         }
 
         public List<T> FindList<T>(Expression<Func<T, bool>> predicate) where T : class
         {
-           // return _repository.FindList(predicate);
+           
         }
         
         public bool Save()
         {
-            //return _repository.Save();
+            
         }
 
        
