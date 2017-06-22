@@ -79,10 +79,6 @@
       <Project>{ecb8a5dd-5c4f-4300-a856-23d86ff664f8}</Project>
       <Name>OpenQbit.Weather.Common.Models</Name>
     </ProjectReference>
-    <ProjectReference Include="..\OpenQbit.Weather.Common.Utils.Logs\OpenQbit.Weather.Common.Utils.Logs.csproj">
-      <Project>{68a43574-741b-457e-adc4-a0831518f35f}</Project>
-      <Name>OpenQbit.Weather.Common.Utils.Logs</Name>
-    </ProjectReference>
     <ProjectReference Include="..\OpenQbit.Weather.DAL.DataAccess.Contracts\OpenQbit.Weather.DAL.DataAccess.Contracts.csproj">
       <Project>{79799c57-f423-41f0-b072-21775030e61e}</Project>
       <Name>OpenQbit.Weather.DAL.DataAccess.Contracts</Name>
