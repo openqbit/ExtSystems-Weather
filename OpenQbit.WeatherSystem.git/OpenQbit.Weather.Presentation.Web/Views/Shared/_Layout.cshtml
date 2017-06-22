@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <!--"~/images/back/back.jpg" -->
+    @*<div data-scroll-speed="6" class="back-img">*@
+    @*<div data-scroll-speed="9" class="back-img1">*@
+    <div class="body-upper">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        <li>@Html.ActionLink("Weather", "Index", "Home")</li>
+                    </ul>
+                    @Html.Partial("_LoginPartial")
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            @RenderBody()
+
+        </div>
+    </div>
+
+    <div id="back">
+        <br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3">
+                    <h4 class="sub-top">Location</h4>
+                    <br>
+                    <p>The hugaf</p>
+                    <p>The ysfui</p>
+                    <p>The oreng</p>
+
+                </div>
+
+                <div class="col-sm-6">
+                    <h4 class="sub-top">Location</h4>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure.
+                    </p>
+                    <br>
+                </div>
+
+                <div class="col-lg-3">
+
+                    <h4 class="sub-top">About</h4>
+
+                    <div id="foot-icon">
+                        <i id="icon" class="fa fa-bolt fa-3x" aria-hidden="true"></i>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore mt anim id est laborum.
+                    </p>
+                </div>
+
+
+            </div>
+            <br>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    @*</div>*@
+    @*</div>*@
+
+
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
