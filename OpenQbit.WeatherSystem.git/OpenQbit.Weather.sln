@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Weather.Common.Mod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Weather.DAL.DataAccess", "OpenQbit.Weather.DAL.DataAccess\OpenQbit.Weather.DAL.DataAccess.csproj", "{C9830A5E-208C-444B-AF11-B950B26C8D76}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Weather.Common.loc", "OpenQbit.Weather.Common.loc\OpenQbit.Weather.Common.loc.csproj", "{F0C341DB-8D82-4888-AC41-FA2D4C1FA57E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Weather.Common.Utils.Logs", "OpenQbit.Weather.Common.Utils.Logs\OpenQbit.Weather.Common.Utils.Logs.csproj", "{68A43574-741B-457E-ADC4-A0831518F35F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{C9830A5E-208C-444B-AF11-B950B26C8D76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9830A5E-208C-444B-AF11-B950B26C8D76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9830A5E-208C-444B-AF11-B950B26C8D76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0C341DB-8D82-4888-AC41-FA2D4C1FA57E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0C341DB-8D82-4888-AC41-FA2D4C1FA57E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0C341DB-8D82-4888-AC41-FA2D4C1FA57E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0C341DB-8D82-4888-AC41-FA2D4C1FA57E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68A43574-741B-457E-ADC4-A0831518F35F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68A43574-741B-457E-ADC4-A0831518F35F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68A43574-741B-457E-ADC4-A0831518F35F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68A43574-741B-457E-ADC4-A0831518F35F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -40,5 +52,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{ECB8A5DD-5C4F-4300-A856-23D86FF664F8} = {00CD563A-C7D9-4CB7-8292-2C2C750F73DA}
 		{C9830A5E-208C-444B-AF11-B950B26C8D76} = {72A8F71A-1DB9-43AE-A8CA-CAB8A508890D}
+		{F0C341DB-8D82-4888-AC41-FA2D4C1FA57E} = {00CD563A-C7D9-4CB7-8292-2C2C750F73DA}
+		{68A43574-741B-457E-ADC4-A0831518F35F} = {00CD563A-C7D9-4CB7-8292-2C2C750F73DA}
 	EndGlobalSection
 EndGlobal
