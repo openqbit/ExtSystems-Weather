@@ -19,8 +19,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Weather.Common.Mod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Weather.DAL.DataAccess", "OpenQbit.Weather.DAL.DataAccess\OpenQbit.Weather.DAL.DataAccess.csproj", "{C9830A5E-208C-444B-AF11-B950B26C8D76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQubit.Service", "OpenQubit.Service\OpenQubit.Service.csproj", "{14B7B798-3544-499A-9B8D-98DE41DD4CA4}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Weather.Common.loc", "C:\Users\HP\Desktop\Weather\OpenQbit.Weather\OpenQbit.Weather.Common.loc\OpenQbit.Weather.Common.loc.csproj", "{F0C341DB-8D82-4888-AC41-FA2D4C1FA57E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Weather.Common.Utils.Logs", "C:\Users\HP\Desktop\Weather\OpenQbit.Weather\OpenQbit.Weather.Common.Utils.Logs\OpenQbit.Weather.Common.Utils.Logs.csproj", "{68A43574-741B-457E-ADC4-A0831518F35F}"
@@ -32,6 +30,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Weather.Test.DalTest", "C:\Users\HP\Desktop\Weather\OpenQbit.Weather\OpenQbit.Weather.Test.DalTest\OpenQbit.Weather.Test.DalTest.csproj", "{8BC9F700-CD47-44AF-A154-CAB1D70EF8E3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Weather.Presentation.Web", "OpenQbit.Weather.Presentation.Web\OpenQbit.Weather.Presentation.Web.csproj", "{D8F41A66-5A34-4AA9-998D-ABDA26A9CE73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Weather.Service.WebAPI", "OpenQbit.Weather.Service.WebAPI\OpenQbit.Weather.Service.WebAPI.csproj", "{20AB2802-BB45-4619-A4B0-17550CC655A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,10 +47,6 @@ Global
 		{C9830A5E-208C-444B-AF11-B950B26C8D76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9830A5E-208C-444B-AF11-B950B26C8D76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9830A5E-208C-444B-AF11-B950B26C8D76}.Release|Any CPU.Build.0 = Release|Any CPU
-		{14B7B798-3544-499A-9B8D-98DE41DD4CA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{14B7B798-3544-499A-9B8D-98DE41DD4CA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{14B7B798-3544-499A-9B8D-98DE41DD4CA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{14B7B798-3544-499A-9B8D-98DE41DD4CA4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F0C341DB-8D82-4888-AC41-FA2D4C1FA57E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F0C341DB-8D82-4888-AC41-FA2D4C1FA57E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0C341DB-8D82-4888-AC41-FA2D4C1FA57E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -75,6 +71,10 @@ Global
 		{D8F41A66-5A34-4AA9-998D-ABDA26A9CE73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8F41A66-5A34-4AA9-998D-ABDA26A9CE73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8F41A66-5A34-4AA9-998D-ABDA26A9CE73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20AB2802-BB45-4619-A4B0-17550CC655A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20AB2802-BB45-4619-A4B0-17550CC655A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20AB2802-BB45-4619-A4B0-17550CC655A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20AB2802-BB45-4619-A4B0-17550CC655A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,12 +82,12 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{ECB8A5DD-5C4F-4300-A856-23D86FF664F8} = {00CD563A-C7D9-4CB7-8292-2C2C750F73DA}
 		{C9830A5E-208C-444B-AF11-B950B26C8D76} = {72A8F71A-1DB9-43AE-A8CA-CAB8A508890D}
-		{14B7B798-3544-499A-9B8D-98DE41DD4CA4} = {16935FC7-065B-464E-B633-7B2018C31562}
 		{F0C341DB-8D82-4888-AC41-FA2D4C1FA57E} = {00CD563A-C7D9-4CB7-8292-2C2C750F73DA}
 		{68A43574-741B-457E-ADC4-A0831518F35F} = {00CD563A-C7D9-4CB7-8292-2C2C750F73DA}
 		{FD19EFE2-2513-4808-B872-C65F850B63DD} = {8A3C8176-A84D-47E4-9A56-9F8AA9D4B69B}
 		{C57BFA9C-12AF-4A41-83D8-65EBF1CBCB36} = {8A3C8176-A84D-47E4-9A56-9F8AA9D4B69B}
 		{8BC9F700-CD47-44AF-A154-CAB1D70EF8E3} = {DD3074E6-CF6B-473B-8962-843F4C1EBF28}
 		{D8F41A66-5A34-4AA9-998D-ABDA26A9CE73} = {FE60011E-D023-4354-9921-2340AC421514}
+		{20AB2802-BB45-4619-A4B0-17550CC655A3} = {16935FC7-065B-464E-B633-7B2018C31562}
 	EndGlobalSection
 EndGlobal
