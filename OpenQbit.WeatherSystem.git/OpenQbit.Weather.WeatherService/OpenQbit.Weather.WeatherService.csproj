@@ -57,9 +57,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CountryManager.cs" />
+    <Compile Include="DaydetailManager.cs" />
+    <Compile Include="ForecastdetailManager.cs" />
+    <Compile Include="ForecastManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\OpenQbit.Weather.Common.Utils.Logs\OpenQbit.Weather.Common.Utils.Logs.csproj">
+      <Project>{68a43574-741b-457e-adc4-a0831518f35f}</Project>
+      <Name>OpenQbit.Weather.Common.Utils.Logs</Name>
+    </ProjectReference>
     <ProjectReference Include="..\OpenQbit.Weather.DAL.DataAccess.Contracts\OpenQbit.Weather.DAL.DataAccess.Contracts.csproj">
       <Project>{79799c57-f423-41f0-b072-21775030e61e}</Project>
       <Name>OpenQbit.Weather.DAL.DataAccess.Contracts</Name>

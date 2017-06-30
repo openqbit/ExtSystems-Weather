@@ -6,19 +6,22 @@ using System.Text;
 using System.Threading.Tasks;
 using OpenQbit.Weather.WeatherService.Contracts;
 using OpenQbit.Weather.DAL.DataAccess.Contracts;
+using OpenQbit.Weather.Common.Utils.Logs;
 
 using Microsoft.Practices.Unity;
 
 namespace OpenQbit.Weather.WeatherService
 {
-    public class CountryManager : ICommonManager
+    public class CountryManager : ICountryManager
     {
         private IRepository _repository;
+        private ILogger _logger;
 
         [InjectionConstructor]
-        public CountryManager(IRepository repository)
+        public CountryManager(IRepository repository,ILogger logger)
         {
             this._repository = repository;
+            this._logger = logger;
         }
 
         public bool Recored<T>(T obj) where T : class
@@ -28,32 +31,32 @@ namespace OpenQbit.Weather.WeatherService
 
         public bool Update<T>(T obj) where T : class
         {
-            throw new NotImplementedException();
+            return _repository.Update(obj);
         }
 
         public bool Delete<T>(T obj) where T : class
         {
-            throw new NotImplementedException();
+            return _repository.Delete(obj);
         }
 
         public List<T> GetAll<T>() where T : class
         {
-            throw new NotImplementedException();
+            return _repository.GetAll<T>();
         }
 
         public T Find<T>(Expression<Func<T, bool>> predicate) where T : class
         {
-            throw new NotImplementedException();
+            return _repository.Find(predicate);
         }
 
         public List<T> FindList<T>(Expression<Func<T, bool>> predicate) where T : class
         {
-            throw new NotImplementedException();
+            return _repository.FindList(predicate);
         }
-        
+
         public bool Save()
         {
-            throw new NotImplementedException();
+            return _repository.Save();
         }
 
        
