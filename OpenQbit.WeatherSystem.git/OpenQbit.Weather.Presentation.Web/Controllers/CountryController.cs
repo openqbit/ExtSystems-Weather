@@ -2,7 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
+
+using System.Threading.Tasks;
 using OpenQbit.Weather.Presentation.Web.Models;
+using OpenQbit.Weather.Presentation.Web.WebApi;
 
 namespace OpenQbit.Weather.Presentation.Web.Controllers
 {
@@ -11,7 +15,7 @@ namespace OpenQbit.Weather.Presentation.Web.Controllers
         public async Task<ActionResult> Index()
         {
             WebClient client = new WebClient();
-            Customer customer = await client.Get();
+            CountryModel country = await client.GetCountry();
 
             return View(country);
         }
