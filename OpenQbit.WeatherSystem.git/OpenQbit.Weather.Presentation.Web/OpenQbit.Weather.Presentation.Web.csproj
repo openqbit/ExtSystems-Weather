@@ -171,6 +171,7 @@
     <Compile Include="Controllers\CountryController.cs" />
     <Compile Include="Controllers\DayDetailController.cs" />
     <Compile Include="Controllers\ForcastController.cs" />
+    <Compile Include="Controllers\ForcastDetailController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
