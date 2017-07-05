@@ -9,6 +9,7 @@ using OpenQbit.Weather.DAL.DataAccess;
 using OpenQbit.Weather.DAL.DataAccess.Contracts;
 using OpenQbit.Weather.WeatherService;
 using OpenQbit.Weather.WeatherService.Contracts;
+using OpenQbit.Weather.Common.Utils.Logs;
 
 using Microsoft.Practices.Unity;
 
@@ -21,7 +22,12 @@ namespace OpenQbit.Weather.Common.loc
         private static void Register()
         {
             Container.RegisterType<IRepository, Repository>();
-           
+            Container.RegisterType<ILogger, Logger>();
+
+            Container.RegisterType<ICountryManager, CountryManager >();
+            Container.RegisterType<IDaydetailManager, DaydetailManager>();
+            Container.RegisterType<IForecastManager, ForecastManager>();
+
         }
 
         public static T Resolve<T>()

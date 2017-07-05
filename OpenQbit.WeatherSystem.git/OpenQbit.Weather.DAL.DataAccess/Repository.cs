@@ -7,21 +7,11 @@ using System.Threading.Tasks;
 using System.Linq.Expressions;
 using System.Data.Entity;
 using OpenQbit.Weather.DAL.DataAccess.Contracts;
-using OpenQbit.Weather.Common.Utils.Logs;
-using Microsoft.Practices.Unity;
 
 namespace OpenQbit.Weather.DAL.DataAccess
 {
     public class Repository : IRepository
     {
-        private ILogger _logger;
-
-        [InjectionConstructor]
-        public Repository(ILogger _logger)
-        {
-            this._logger = _logger;
-        }
-
         private WeatherContext _db = new WeatherContext();
         public bool Create<T>(T obj) where T : class
         {

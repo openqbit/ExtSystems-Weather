@@ -23,17 +23,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Weather.Common.loc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Weather.Common.Utils.Logs", "OpenQbit.Weather.Common.Utils.Logs\OpenQbit.Weather.Common.Utils.Logs.csproj", "{68A43574-741B-457E-ADC4-A0831518F35F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Weather.Presentation.Web", "OpenQbit.Weather.Presentation.Web\OpenQbit.Weather.Presentation.Web.csproj", "{D8F41A66-5A34-4AA9-998D-ABDA26A9CE73}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Weather.Service.WebAPI", "OpenQbit.Weather.Service.WebAPI\OpenQbit.Weather.Service.WebAPI.csproj", "{78C081F5-8C9A-4D0A-849C-38F4482DEE1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Weather.WeatherService", "OpenQbit.Weather.WeatherService\OpenQbit.Weather.WeatherService.csproj", "{FD19EFE2-2513-4808-B872-C65F850B63DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Weather.WeatherService.Contracts", "OpenQbit.Weather.WeatherService.Contracts\OpenQbit.Weather.WeatherService.Contracts.csproj", "{C57BFA9C-12AF-4A41-83D8-65EBF1CBCB36}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Weather.DAL.DataAccess.Contracts", "OpenQbit.Weather.DAL.DataAccess.Contracts\OpenQbit.Weather.DAL.DataAccess.Contracts.csproj", "{79799C57-F423-41F0-B072-21775030E61E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Weather.Test.DalTest", "OpenQbit.Weather.Test.DalTest\OpenQbit.Weather.Test.DalTest.csproj", "{8BC9F700-CD47-44AF-A154-CAB1D70EF8E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Weather.WeatherService", "OpenQbit.Weather.WeatherService\OpenQbit.Weather.WeatherService.csproj", "{FD19EFE2-2513-4808-B872-C65F850B63DD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Weather.WeatherService.Contracts", "OpenQbit.Weather.WeatherService.Contracts\OpenQbit.Weather.WeatherService.Contracts.csproj", "{C57BFA9C-12AF-4A41-83D8-65EBF1CBCB36}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Weather.Presentation.Web", "OpenQbit.Weather.Presentation.Web\OpenQbit.Weather.Presentation.Web.csproj", "{D8F41A66-5A34-4AA9-998D-ABDA26A9CE73}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,22 +57,10 @@ Global
 		{68A43574-741B-457E-ADC4-A0831518F35F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68A43574-741B-457E-ADC4-A0831518F35F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68A43574-741B-457E-ADC4-A0831518F35F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D8F41A66-5A34-4AA9-998D-ABDA26A9CE73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D8F41A66-5A34-4AA9-998D-ABDA26A9CE73}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D8F41A66-5A34-4AA9-998D-ABDA26A9CE73}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D8F41A66-5A34-4AA9-998D-ABDA26A9CE73}.Release|Any CPU.Build.0 = Release|Any CPU
 		{78C081F5-8C9A-4D0A-849C-38F4482DEE1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{78C081F5-8C9A-4D0A-849C-38F4482DEE1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78C081F5-8C9A-4D0A-849C-38F4482DEE1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78C081F5-8C9A-4D0A-849C-38F4482DEE1D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{79799C57-F423-41F0-B072-21775030E61E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{79799C57-F423-41F0-B072-21775030E61E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{79799C57-F423-41F0-B072-21775030E61E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{79799C57-F423-41F0-B072-21775030E61E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8BC9F700-CD47-44AF-A154-CAB1D70EF8E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8BC9F700-CD47-44AF-A154-CAB1D70EF8E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8BC9F700-CD47-44AF-A154-CAB1D70EF8E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8BC9F700-CD47-44AF-A154-CAB1D70EF8E3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FD19EFE2-2513-4808-B872-C65F850B63DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FD19EFE2-2513-4808-B872-C65F850B63DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD19EFE2-2513-4808-B872-C65F850B63DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -81,6 +69,18 @@ Global
 		{C57BFA9C-12AF-4A41-83D8-65EBF1CBCB36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C57BFA9C-12AF-4A41-83D8-65EBF1CBCB36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C57BFA9C-12AF-4A41-83D8-65EBF1CBCB36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79799C57-F423-41F0-B072-21775030E61E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79799C57-F423-41F0-B072-21775030E61E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79799C57-F423-41F0-B072-21775030E61E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79799C57-F423-41F0-B072-21775030E61E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BC9F700-CD47-44AF-A154-CAB1D70EF8E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BC9F700-CD47-44AF-A154-CAB1D70EF8E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BC9F700-CD47-44AF-A154-CAB1D70EF8E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BC9F700-CD47-44AF-A154-CAB1D70EF8E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8F41A66-5A34-4AA9-998D-ABDA26A9CE73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8F41A66-5A34-4AA9-998D-ABDA26A9CE73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8F41A66-5A34-4AA9-998D-ABDA26A9CE73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8F41A66-5A34-4AA9-998D-ABDA26A9CE73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -90,11 +90,11 @@ Global
 		{C9830A5E-208C-444B-AF11-B950B26C8D76} = {72A8F71A-1DB9-43AE-A8CA-CAB8A508890D}
 		{F0C341DB-8D82-4888-AC41-FA2D4C1FA57E} = {00CD563A-C7D9-4CB7-8292-2C2C750F73DA}
 		{68A43574-741B-457E-ADC4-A0831518F35F} = {00CD563A-C7D9-4CB7-8292-2C2C750F73DA}
-		{D8F41A66-5A34-4AA9-998D-ABDA26A9CE73} = {FE60011E-D023-4354-9921-2340AC421514}
 		{78C081F5-8C9A-4D0A-849C-38F4482DEE1D} = {16935FC7-065B-464E-B633-7B2018C31562}
-		{79799C57-F423-41F0-B072-21775030E61E} = {72A8F71A-1DB9-43AE-A8CA-CAB8A508890D}
-		{8BC9F700-CD47-44AF-A154-CAB1D70EF8E3} = {DD3074E6-CF6B-473B-8962-843F4C1EBF28}
 		{FD19EFE2-2513-4808-B872-C65F850B63DD} = {8A3C8176-A84D-47E4-9A56-9F8AA9D4B69B}
 		{C57BFA9C-12AF-4A41-83D8-65EBF1CBCB36} = {8A3C8176-A84D-47E4-9A56-9F8AA9D4B69B}
+		{79799C57-F423-41F0-B072-21775030E61E} = {72A8F71A-1DB9-43AE-A8CA-CAB8A508890D}
+		{8BC9F700-CD47-44AF-A154-CAB1D70EF8E3} = {DD3074E6-CF6B-473B-8962-843F4C1EBF28}
+		{D8F41A66-5A34-4AA9-998D-ABDA26A9CE73} = {FE60011E-D023-4354-9921-2340AC421514}
 	EndGlobalSection
 EndGlobal

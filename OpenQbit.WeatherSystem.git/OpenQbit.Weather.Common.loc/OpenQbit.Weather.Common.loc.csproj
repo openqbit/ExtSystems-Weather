@@ -70,6 +70,10 @@
       <Project>{ecb8a5dd-5c4f-4300-a856-23d86ff664f8}</Project>
       <Name>OpenQbit.Weather.Common.Models</Name>
     </ProjectReference>
+    <ProjectReference Include="..\OpenQbit.Weather.Common.Utils.Logs\OpenQbit.Weather.Common.Utils.Logs.csproj">
+      <Project>{68a43574-741b-457e-adc4-a0831518f35f}</Project>
+      <Name>OpenQbit.Weather.Common.Utils.Logs</Name>
+    </ProjectReference>
     <ProjectReference Include="..\OpenQbit.Weather.DAL.DataAccess.Contracts\OpenQbit.Weather.DAL.DataAccess.Contracts.csproj">
       <Project>{79799c57-f423-41f0-b072-21775030e61e}</Project>
       <Name>OpenQbit.Weather.DAL.DataAccess.Contracts</Name>
@@ -77,6 +81,14 @@
     <ProjectReference Include="..\OpenQbit.Weather.DAL.DataAccess\OpenQbit.Weather.DAL.DataAccess.csproj">
       <Project>{c9830a5e-208c-444b-af11-b950b26c8d76}</Project>
       <Name>OpenQbit.Weather.DAL.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenQbit.Weather.WeatherService.Contracts\OpenQbit.Weather.WeatherService.Contracts.csproj">
+      <Project>{c57bfa9c-12af-4a41-83d8-65ebf1cbcb36}</Project>
+      <Name>OpenQbit.Weather.WeatherService.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenQbit.Weather.WeatherService\OpenQbit.Weather.WeatherService.csproj">
+      <Project>{fd19efe2-2513-4808-b872-c65f850b63dd}</Project>
+      <Name>OpenQbit.Weather.WeatherService</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -58,7 +58,6 @@
   <ItemGroup>
     <Compile Include="CountryManager.cs" />
     <Compile Include="DaydetailManager.cs" />
-    <Compile Include="ForecastdetailManager.cs" />
     <Compile Include="ForecastManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
