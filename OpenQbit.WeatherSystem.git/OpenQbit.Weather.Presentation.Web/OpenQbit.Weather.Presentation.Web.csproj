@@ -176,6 +176,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CountryModel.cs" />
     <Compile Include="Models\DayDetailsModel.cs" />
+    <Compile Include="Models\ForcastDetailModel.cs" />
     <Compile Include="Models\ForcastModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />

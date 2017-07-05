@@ -14,6 +14,11 @@ namespace OpenQbit.Weather.Presentation.Web.Models
         public DateTime Date { get; set; }
         
         public string Status { get; set; }
-        
+
+        public static implicit operator ForcastModel(ForcastDetailModel f)
+        {
+            throw new NotImplementedException();
+        }
+
     }
 }
