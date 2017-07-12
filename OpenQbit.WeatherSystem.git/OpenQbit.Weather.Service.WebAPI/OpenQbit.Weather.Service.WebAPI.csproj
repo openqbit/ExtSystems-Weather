@@ -209,6 +209,7 @@
     <Compile Include="Controllers\API\CountryController.cs" />
     <Compile Include="Controllers\API\DayDetailsController.cs" />
     <Compile Include="Controllers\API\ForcastController.cs" />
+    <Compile Include="Controllers\API\ForecastDetailController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
