@@ -207,6 +207,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\API\CountryController.cs" />
+    <Compile Include="Controllers\API\ForecastDetailController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -217,7 +218,7 @@
     <Compile Include="Models\CountryModel.cs" />
     <Compile Include="Models\DayDetail.cs" />
     <Compile Include="Models\ForcastModel.cs" />
-    <Compile Include="Models\ForcastDetailModel.cs" />
+    <Compile Include="Models\ForecastDetailModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />

@@ -5,7 +5,7 @@ using System.Web;
 
 namespace OpenQbit.Weather.Service.WebAPI.Models
 {
-    public class ForcastDetailModel
+    public class ForecastDetailModel
     {
         public int Id { get; set; }
         public DateTime Time { get; set; }
