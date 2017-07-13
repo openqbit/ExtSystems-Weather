@@ -16,3 +16,4 @@ namespace OpenQbit.Weather.Presentation.Web.Models
 
          }*/
     }
+}

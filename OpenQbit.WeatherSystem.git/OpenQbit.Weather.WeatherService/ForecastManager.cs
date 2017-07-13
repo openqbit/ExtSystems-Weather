@@ -46,6 +46,7 @@ namespace OpenQbit.Weather.WeatherService
 
         public T Find<T>(Expression<Func<T, bool>> predicate) where T : class
         {
+            
             return _repository.Find(predicate);
         }
 

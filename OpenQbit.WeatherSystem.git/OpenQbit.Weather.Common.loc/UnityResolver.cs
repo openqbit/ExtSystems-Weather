@@ -19,7 +19,7 @@ namespace OpenQbit.Weather.Common.loc
     {
         private static readonly IUnityContainer Container = new UnityContainer();
 
-        private static void Register()
+        public static void Register()
         {
             Container.RegisterType<IRepository, Repository>();
             Container.RegisterType<ILogger, Logger>();
