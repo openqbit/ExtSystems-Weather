@@ -27,6 +27,7 @@ namespace OpenQbit.Weather.Common.loc
             Container.RegisterType<ICountryManager, CountryManager >();
             Container.RegisterType<IDaydetailManager, DaydetailManager>();
             Container.RegisterType<IForecastManager, ForecastManager>();
+            
 
         }
 
