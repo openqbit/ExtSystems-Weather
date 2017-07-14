@@ -3,17 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace OpenQbit.Weather.Presentation.Web.Models
+namespace OpenQbit.Weather.Service.WebAPI.Models
 {
     public class CountryModel
     {
         public int Id { get; set; }
         public string countryName { get; set; }
-
-        /* public static implicit operator CountryModel( v)
-         {
-             throw new NotImplementedException();
-
-         }*/
     }
 }
